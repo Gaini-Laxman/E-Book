@@ -19,25 +19,6 @@ import "./PdfReader.css";
 // Set the worker for PDF.js
 pdfjs.GlobalWorkerOptions.workerPort = new pdfjsWorker();
 
-<div class="page-container">
-  <nav class="navbar">
-    <ul class="navbar-links">
-      <li>
-        <a href="#">Home</a>
-      </li>
-      <li>
-        <a href="#">Books</a>
-      </li>
-      <li>
-        <a href="#">About</a>
-      </li>
-      <li>
-        <a href="#">Contact</a>
-      </li>
-    </ul>
-  </nav>
-</div>;
-
 // List of books
 const books = [
   { id: 1, title: "Java Book", file: "/book.pdf" },
@@ -45,6 +26,22 @@ const books = [
   { id: 3, title: "Collection", file: "/book3.pdf" },
   { id: 4, title: "Core Java Interview QA", file: "/book4.pdf" },
   { id: 5, title: "Spring", file: "/book5.pdf" },
+  { id: 6, title: "DSA", file: "/book6.pdf" },
+  { id: 7, title: "Microservices", file: "/book7.pdf" },
+  { id: 8, title: "Rest API", file: "/book8.pdf" },
+  { id: 9, title: "Make MyTrip Rest API", file: "/book9.pdf" },
+  { id: 10, title: "JUnit 5", file: "/book10.pdf" },
+  { id: 11, title: "Sprin MVC With Mini Project", file: "/book11.pdf" },
+  { id: 12, title: "Kafka", file: "/book12.pdf" },
+  { id: 13, title: "Spring Security", file: "/book13.pdf" },
+  { id: 15, title: "Kubernates", file: "/book14.pdf" },
+  { id: 16, title: "Angular", file: "/book15.pdf" },
+  { id: 17, title: "Jenkins CICD", file: "/book16.pdf" },
+  { id: 18, title: "Logging", file: "/book17.pdf" },
+  { id: 19, title: "Sonar Qube", file: "/book18.pdf" },
+  { id: 20, title: "SDLC", file: "/book19.pdf" },
+  { id: 21, title: "AWS", file: "/book20.pdf" },
+  { id: 22, title: "Maven", file: "/book21.pdf" },
 ];
 
 export default function PdfReader() {
