@@ -318,7 +318,7 @@ export default function PdfReader() {
                 animate={{ opacity: 1 }}
                 className="download-message"
               >
-                Certificate Ready for Download!
+                🎉 Congratulations You have SuccessFully earned Certificate...
               </motion.div>
             )}
           </>
