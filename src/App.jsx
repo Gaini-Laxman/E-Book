@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
-import "./pages/navbar";
+import "./pages/navbar.css";
+import Navbar from "./pages/navbar"; // Correct import for Navbar component
+
 import PdfReader from "./pages/PdfReader"; // Correct path to PdfReader
 
 // Define the CertificateDownloadButton here
@@ -20,18 +22,15 @@ const CertificateDownloadButton = () => {
       }`}
       onClick={handleDownload}
       disabled={!isDownloadEnabled}
-    >
-      Download Certificate
-    </button>
+    ></button>
   );
 };
 
 function App() {
   return (
     <div>
-      <navbar />
-      <PdfReader /> {/* Use the PdfReader component here */}
-      {/* CertificateDownloadButton is included below */}
+      <Navbar />
+      <PdfReader />
       <CertificateDownloadButton />
     </div>
   );
